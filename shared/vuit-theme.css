@@ -1,1 +1,49 @@
+/*
+==================================================
+ Concierge Platform Theme
+==================================================
+*/
 
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:
+
+        "Segoe UI",
+        "Aptos",
+        sans-serif;
+
+}
+
+.vuit-card{
+
+    max-width:var(--card-width);
+
+    background:var(--card);
+
+    border-radius:var(--radius-card);
+
+    box-shadow:var(--shadow);
+
+}
+
+.vuit-button{
+
+    height:var(--button-height);
+
+    border-radius:16px;
+
+    background:var(--vuit-gold);
+
+    color:white;
+
+}
+
+.vuit-button:hover{
+
+    background:var(--vuit-gold-hover);
+
+}
