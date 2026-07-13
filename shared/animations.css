@@ -1,18 +1,18 @@
 /*
-==================================================
+==========================================================
+ Concierge Platform
  Shared Animations
-==================================================
+ Version: 1.2.0 RC1
+==========================================================
 */
+
+/* -------------------------------------------------------
+   Fade In
+------------------------------------------------------- */
 
 .fade-in{
 
-    animation:fadeIn .35s ease;
-
-}
-
-.fade-out{
-
-    animation:fadeOut .35s ease forwards;
+    animation:fadeIn .35s ease forwards;
 
 }
 
@@ -22,7 +22,7 @@
 
         opacity:0;
 
-        transform:translateY(10px);
+        transform:translateY(8px);
 
     }
 
@@ -33,6 +33,17 @@
         transform:none;
 
     }
+
+}
+
+
+/* -------------------------------------------------------
+   Fade Out
+------------------------------------------------------- */
+
+.fade-out{
+
+    animation:fadeOut .35s ease forwards;
 
 }
 
@@ -52,10 +63,17 @@
 
 }
 
+
+/* -------------------------------------------------------
+   Hover Lift
+------------------------------------------------------- */
+
 .hover-lift{
 
     transition:
+
         transform .2s,
+
         box-shadow .2s;
 
 }
@@ -63,5 +81,83 @@
 .hover-lift:hover{
 
     transform:translateY(-2px);
+
+}
+
+
+/* -------------------------------------------------------
+   Success Check Animation
+------------------------------------------------------- */
+
+.check-circle{
+
+    stroke-dasharray:264;
+
+    stroke-dashoffset:264;
+
+    animation:drawCircle .6s ease forwards;
+
+}
+
+.check-mark{
+
+    stroke-dasharray:60;
+
+    stroke-dashoffset:60;
+
+    animation:drawTick .35s .45s ease forwards;
+
+}
+
+@keyframes drawCircle{
+
+    to{
+
+        stroke-dashoffset:0;
+
+    }
+
+}
+
+@keyframes drawTick{
+
+    to{
+
+        stroke-dashoffset:0;
+
+    }
+
+}
+
+
+/* -------------------------------------------------------
+   Countdown Pulse
+------------------------------------------------------- */
+
+.countdown{
+
+    animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
 
 }
