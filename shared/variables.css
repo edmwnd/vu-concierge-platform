@@ -1,1 +1,53 @@
+/*
+==================================================
+ Concierge Platform
+ Shared Design Variables
+ Version 1.2.0 RC1
+==================================================
+*/
 
+:root{
+
+    /* Brand */
+
+    --vuit-gold:#C8A977;
+    --vuit-gold-hover:#B9975B;
+    --vuit-sage:#8BA18E;
+
+    /* Surfaces */
+
+    --background:#F8F7F5;
+    --card:#FFFFFF;
+
+    /* Typography */
+
+    --text:#252525;
+    --text-secondary:#606060;
+
+    /* Borders */
+
+    --border:#EAE7E1;
+
+    /* Effects */
+
+    --shadow:
+        0 18px 40px rgba(0,0,0,.08);
+
+    --focus:
+        0 0 0 4px rgba(200,169,119,.18);
+
+    /* Layout */
+
+    --card-width:640px;
+
+    --radius-card:30px;
+
+    --radius-control:14px;
+
+    --input-height:60px;
+
+    --textarea-height:180px;
+
+    --button-height:60px;
+
+}
