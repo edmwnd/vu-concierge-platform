@@ -1,20 +1,145 @@
 /*
-==================================================
- Concierge Platform Theme
-==================================================
+==========================================================
+ Concierge Platform
+ Shared UI Theme
+ Version: 1.2.0 RC1
+==========================================================
+
+This stylesheet defines the reusable UI components used
+throughout the Concierge Platform.
+
+Do not place page-specific styling in this file.
 */
 
+html,
 body{
+
+    margin:0;
+    padding:0;
+
+    min-height:100%;
+
+    font-family:var(--font-family);
 
     background:var(--background);
 
-    color:var(--text);
+    color:var(--text-primary);
 
-    font-family:
+    -webkit-font-smoothing:antialiased;
 
-        "Segoe UI",
-        "Aptos",
-        sans-serif;
+    text-rendering:optimizeLegibility;
+
+}
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+.concierge-page{
+
+    max-width:var(--page-width);
+
+    margin:0 auto;
+
+    padding:32px 24px;
+
+}
+
+.vuit-hero{
+
+    text-align:center;
+
+    max-width:560px;
+
+    margin:0 auto 56px;
+
+}
+
+.vuit-logo{
+
+    width:220px;
+
+    max-width:100%;
+
+}
+
+.vuit-university{
+
+    margin-top:12px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:.20em;
+
+    color:var(--text-muted);
+
+    text-transform:uppercase;
+
+}
+
+.vuit-department{
+
+    margin-top:8px;
+
+    margin-bottom:28px;
+
+    color:var(--vuit-gold);
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+.vuit-title{
+
+    margin:0;
+
+    font-size:46px;
+
+    font-weight:300;
+
+    line-height:1.1;
+
+}
+
+.vuit-subtitle{
+
+    margin-top:20px;
+
+    color:var(--text-secondary);
+
+    font-size:22px;
+
+}
+
+.vuit-description{
+
+    max-width:460px;
+
+    margin:20px auto 0;
+
+    line-height:1.7;
+
+    color:var(--text-secondary);
+
+}
+
+.vuit-divider{
+
+    width:60px;
+
+    height:4px;
+
+    margin:36px auto 0;
+
+    border-radius:999px;
+
+    background:var(--vuit-gold);
 
 }
 
@@ -22,28 +147,85 @@ body{
 
     max-width:var(--card-width);
 
-    background:var(--card);
+    margin:auto;
+
+    padding:var(--card-padding);
+
+    background:var(--surface);
 
     border-radius:var(--radius-card);
 
-    box-shadow:var(--shadow);
+    box-shadow:var(--shadow-card);
 
 }
 
 .vuit-button{
 
+    width:100%;
+
     height:var(--button-height);
 
-    border-radius:16px;
+    border:none;
+
+    border-radius:var(--radius-button);
 
     background:var(--vuit-gold);
 
     color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        background .2s,
+        transform .2s,
+        box-shadow .2s;
+
+    box-shadow:var(--shadow-button);
 
 }
 
 .vuit-button:hover{
 
     background:var(--vuit-gold-hover);
+
+    transform:translateY(-2px);
+
+}
+
+.vuit-success{
+
+    color:var(--success);
+
+}
+
+.vuit-success-divider{
+
+    background:var(--success);
+
+}
+
+@media(max-width:768px){
+
+    .concierge-page{
+
+        padding:20px;
+
+    }
+
+    .vuit-card{
+
+        padding:32px;
+
+    }
+
+    .vuit-title{
+
+        font-size:38px;
+
+    }
 
 }
