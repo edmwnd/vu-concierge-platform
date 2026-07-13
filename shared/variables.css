@@ -1,53 +1,116 @@
 /*
-==================================================
+==========================================================
  Concierge Platform
  Shared Design Variables
- Version 1.2.0 RC1
-==================================================
+ Version: 1.2.0 RC1
+==========================================================
+
+This file contains the design tokens used throughout
+the Concierge Platform.
+
+These values should be referenced using CSS variables
+rather than hard-coded throughout the application.
 */
 
-:root{
+:root {
 
-    /* Brand */
+    /* ======================================================
+       Brand Colours
+    ====================================================== */
 
-    --vuit-gold:#C8A977;
-    --vuit-gold-hover:#B9975B;
-    --vuit-sage:#8BA18E;
+    --vuit-gold: #C8A977;
+    --vuit-gold-hover: #B9975B;
 
-    /* Surfaces */
+    --vuit-sage: #8BA18E;
+    --vuit-sage-dark: #6F8772;
 
-    --background:#F8F7F5;
-    --card:#FFFFFF;
+    /* ======================================================
+       Backgrounds
+    ====================================================== */
 
-    /* Typography */
+    --background: #F8F7F5;
+    --surface: #FFFFFF;
+    --surface-alt: #FFFEFC;
 
-    --text:#252525;
-    --text-secondary:#606060;
+    /* ======================================================
+       Typography
+    ====================================================== */
 
-    /* Borders */
+    --text-primary: #252525;
+    --text-secondary: #606060;
+    --text-muted: #808080;
 
-    --border:#EAE7E1;
+    /* ======================================================
+       Borders
+    ====================================================== */
 
-    /* Effects */
+    --border: #EAE7E1;
 
-    --shadow:
+    /* ======================================================
+       Status Colours
+    ====================================================== */
+
+    --success: var(--vuit-sage);
+
+    --warning: #D8A24A;
+
+    --error: #C62828;
+
+    /* ======================================================
+       Shadows
+    ====================================================== */
+
+    --shadow-card:
         0 18px 40px rgba(0,0,0,.08);
 
-    --focus:
+    --shadow-button:
+        0 12px 28px rgba(200,169,119,.28);
+
+    /* ======================================================
+       Focus
+    ====================================================== */
+
+    --focus-ring:
         0 0 0 4px rgba(200,169,119,.18);
 
-    /* Layout */
+    /* ======================================================
+       Layout
+    ====================================================== */
 
-    --card-width:640px;
+    --page-width: 760px;
 
-    --radius-card:30px;
+    --card-width: 640px;
 
-    --radius-control:14px;
+    --card-padding: 48px;
 
-    --input-height:60px;
+    /* ======================================================
+       Border Radius
+    ====================================================== */
 
-    --textarea-height:180px;
+    --radius-card: 30px;
 
-    --button-height:60px;
+    --radius-control: 14px;
+
+    --radius-button: 16px;
+
+    /* ======================================================
+       Controls
+    ====================================================== */
+
+    --input-height: 60px;
+
+    --textarea-height: 180px;
+
+    --button-height: 60px;
+
+    /* ======================================================
+       Typography
+    ====================================================== */
+
+    --font-family:
+        "Segoe UI",
+        "Aptos",
+        Arial,
+        sans-serif;
 
 }
