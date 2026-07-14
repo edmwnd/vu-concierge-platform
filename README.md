@@ -211,10 +211,6 @@ Current platform components include:
 
 - TeamDynamix ITSM
 - TeamDynamix iPaaS
-- Microsoft Teams
-- Microsoft 365
-- Azure Static Web Apps
-- Power BI
 
 Additional platforms may be added over time.
 
